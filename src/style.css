@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-default: "Inter", var(--font-sans);
+}
+
+html,
+body {
+  @apply font-default scroll-smooth bg-blue-100 text-slate-950;
+}
