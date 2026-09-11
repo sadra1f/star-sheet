@@ -33,6 +33,8 @@ jobs:
 
       - name: Build
         run: yarn build
+        env:
+          VITE_BASE: /star-sheet/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
