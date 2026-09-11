@@ -32,7 +32,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn build
+        run: yarn build && cp dist/index.html dist/404.html
         env:
           VITE_BASE: /star-sheet/
 
